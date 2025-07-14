@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Test</title>
+</head>
+<body>
+  <h1>Open Console to See Output</h1>
+
+  <script>
+function first(array,n) {
+    if (n==null) {
+        return array[0];
+    }
+    if (n < 0) {
+        return [];
+    }
+    return array.slice(0,n);
+}
+
+
+let arr1 = [7, 9, 0, -2];
+let arr2 = [[], 3];
+
+console.log(first(arr1));
+console.log(first(arr2));
+console.log(first(arr1,3));
+console.log(first(arr1,6));
+console.log(first(arr1,-3));
+</script>
+
+</body>
+</html>
+</head>
