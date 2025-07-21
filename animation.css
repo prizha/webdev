@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.Button{
+text-align:center;
+}
+
+.animated-btn{
+background-color:beige;
+padding: 15px 30px;
+font-size: 30px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+border: 2px solid black;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s;
+animation: pulse 3s;
+cursor:pointer;
+}
+
+.animated-btn:hover{
+  background-color: rgb(198, 2, 123);
+  transform: translateY(8px);
+  box-shadow: 0 8px 16px grey;
+  border-color: whitesmoke;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
